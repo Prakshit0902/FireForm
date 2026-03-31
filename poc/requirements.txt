@@ -1,0 +1,4 @@
+requests
+pdfrw
+pypdf
+pytest

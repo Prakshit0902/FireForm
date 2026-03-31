@@ -1,4 +1,5 @@
 import os
+from typing import Union
 # from backend import Fill  
 from commonforms import prepare_form 
 from pypdf import PdfReader
@@ -74,6 +75,7 @@ if __name__ == "__main__":
     
     reader = PdfReader(prepared_pdf)
     fields = reader.get_fields()
+    print(fields)
     if(fields):
         num_fields = len(fields)
     else:
